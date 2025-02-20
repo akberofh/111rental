@@ -1,0 +1,13 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Contain {
+    padding: 0 30px;
+    background-color: var(--contain-bg-color) !important;
+    padding-top: 70px;
+}
+.Contain > img {
+   width: 100%;
+}

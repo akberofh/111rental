@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.Container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 70vh;
+    padding: 0 30px;
+    font-family: "Nunito", sans-serif;
+    background-color: var(--contain-bg-color) !important;
+}
+
+.oneText>span {
+    font-size: 60px;
+    color: var(--title-text-color) !important;
+}
+
+.rented {
+    color: #003271;
+}
+
+.twoText {
+    display: flex;
+    flex-direction: column;
+    gap: 65px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color:var(--card-bg-color) !important;
+    padding: 10px;
+}
+
+.card>a {
+    font-size: 30px;
+}
+
+.cardText>h2 {
+    font-size: 37px;
+    color: #003271;
+}
+
+.cardText>p {
+    font-size: 17px;
+    color: var(--card-title-color) !important;
+}
+
+.car {
+    background-color: rgb(0, 166, 255);
+    color: rgb(0, 63, 172);
+    padding: 6px 6px;
+    display: flex;
+}
+
+.contract {
+    background-color: #D8D2F2;
+    padding: 6px 6px;
+    display: flex;
+    color: purple;
+}
+
+.payment {
+    color: greenyellow;
+    background-color: green;
+    padding: 6px 6px;
+    display: flex;
+}
+
+@media screen and (max-width:992px) and (min-width:577px) {
+
+
+    .oneText>span {
+        font-size: 35px;
+    }
+
+    .Container {
+        display: flex;
+        
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+    }
+
+    .twoText {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .card {
+        flex: 1 1 calc(33.33% - 20px); /* 3 kart yan-yana yerləşir (33% - boşluq) */
+        box-sizing: border-box; /* Padding-in ölçüyə daxil olması üçün */
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .oneText>span {
+        font-size: 25px;
+    }
+
+    .Container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-around;
+      
+    }
+
+    .twoText {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+      
+    }
+ 
+    .twoText {
+        width: 100%;
+    }
+
+    .card {
+        padding: 16px;
+    }
+
+    .card>a {
+        font-size: 18px;
+    }
+
+    .cardText>h2 {
+        font-size: 15px;
+        color: #003271;
+    }
+
+    .cardText>p {
+        font-size: 10px;
+        color: gray;
+    }
+
+}

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #EDF1F6;
+    font-family: "Nunito", sans-serif;
+}
+
+.Content {
+    flex: 1;
+    background-color: white;
+   margin-left: 30px;
+   margin-right: 30px;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.Content > h1 {
+    font-weight: 400;
+    color: #33334F;
+}
+
+.Content >p {
+    color: #4E5D78;
+}
+
+@media screen and (max-width:576px) {
+
+    .Content > h1 {
+        font-size: 20px;
+    }
+    .Content > p{
+        font-size: 10px;
+    }
+}

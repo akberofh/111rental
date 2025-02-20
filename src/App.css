@@ -1,0 +1,84 @@
+:root {
+    --body-bg-color: white;
+    --title-text-color: black;
+    --header-bg-color:#F1F6FD;
+    --navbar-link-color: #003271;
+    --navLogo-link-color:#003271;
+    --contain-bg-color:#E5EAF2;
+    --Footer-text-color:#4E5D78;
+    --Footer-form-bg-color:#E5EAF2;
+    --card-bg-color:#F0F8FF;
+    --card-title-color:gray;
+    --card-top-bg-color:#fff;
+    --card-bg-color:#f9f9f9;
+    --card-bottom-bg-color:#eee;
+}
+
+[data-theme="dark"] {
+    --body-bg-color: rgb(26, 26, 26);
+    --title-text-color: white;
+    --header-bg-color:rgb(26, 26, 26);
+    --Footer-text-color:white;
+    --navbar-link-color: white;
+    --navLogo-link-color:white;
+    --contain-bg-color:rgb(35, 35, 35);
+    --Footer-form-bg-color:rgb(26, 26, 26);
+    --card-bg-color:#9B9B9B;
+    --card-title-color:white;
+    --card-top-bg-color:#b4b4b4;
+    --card-bg-color:#9b9b9b;
+    --card-bottom-bg-color:#404040;
+}
+
+#root {
+    background-color: var(--body-bg-color) ;
+}
+
+.card-top{
+    background-color: var(--card-top-bg-color);
+}
+.card-bg{
+    background-color: var(--card-bg-color);
+}
+.card-bottom{
+    background-color: var(--card-bottom-bg-color);
+}
+
+.card {
+    background-color: var(--card-bg-color);
+}
+
+.card > p {
+    color: var();
+}
+
+h1 {
+    color: var(--title-text-color);
+}
+
+.Footer > a {
+    color: var(--Footer-text-color);
+}
+
+header {
+    background-color: var(--header-bg-color);
+}
+.navbar > ul > a {
+    color: var(--navbar-link-color); 
+    text-decoration: none; 
+}
+
+.navLogo > a {
+    color: var(--navLogo-link-color);
+}
+
+.navbar > ul > a:hover {
+    color: var(--navbar-link-color);
+}
+
+.Contain {
+    background-color: var(--contain-bg-color);
+}
+.TwoText {
+    background-color: var(--Footer-form-bg-color);
+}

@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+.paymentContainer {
+    background-color: #E5EAF2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Nunito",sans-serif;
+    height: 100vh;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.paymentRow {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.paymentTitle {
+    padding-bottom: 10px;
+}

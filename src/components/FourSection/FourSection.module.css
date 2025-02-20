@@ -1,0 +1,47 @@
+.Container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  height: 15vh;
+  overflow-x: auto;
+  white-space: nowrap;
+  cursor: grab;
+}
+
+.image>img {
+  width: 55px;
+  animation: move 10s infinite linear;
+  cursor: pointer;
+}
+
+.Container:active {
+  cursor: grabbing;
+}
+
+
+@media screen and (max-width:992px) and (min-width:577px) {
+
+  .Container {
+    height: 10vh;
+  }
+
+  .image>img {
+    width: 40px;
+    animation: move 10s infinite linear;
+  }
+}
+
+@media screen and (max-width:576px) {
+
+  .Container {
+    height: 7vh;
+  }
+
+  .image>img {
+    width: 20px;
+    animation: move 10s infinite linear;
+  }
+  
+}

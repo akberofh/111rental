@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+.Faq {
+    font-family: "Nunito", sans-serif;
+    min-height: 100vh;
+    background-color: #EDF1F6;
+    
+}
+
+.Contain {
+    flex: 1;
+    width: 100%;
+    padding: 0px 30px;
+    padding-top: 100px;
+    padding-bottom: 30px;
+}
+
+.Head {
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.Head h1 {
+    color: #353551;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.Head p {
+    color: #555;
+    font-size: 16px;
+    font-weight: 400;
+    text-align: left;
+}
+
+.Foot,
+.Twofoot {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.question {
+    width: 100%;
+}
+
+.question button {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border: none;
+    font-size: 16px;
+    padding: 15px 20px;
+    color: black;
+    border-radius: 10px;
+    font-family: "Nunito", sans-serif;
+    width: 100%;
+    cursor: pointer;
+    transition:  0.3s ease, border 0.3s ease;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.question button:hover {
+    background-color: #f0f8ff;
+    border: 1px solid #0092ec;
+}
+
+.question button span {
+    padding: 7px 15px;
+    background-color: #0092ec;
+    border-radius: 12px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.answer {
+    width: 100%;
+    background-color: white;
+    border-radius: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #353551;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    height: 0;
+    overflow: hidden;
+    display: block; 
+    transition: height 0.3s ease, padding 0.3s ease-in-out;
+}
+
+.answer.show {
+    height: auto;
+    padding: 15px 20px;
+}
+
+
+.Content {
+    display: flex;
+    gap: 40px;
+}
+
+@media screen and (max-width:992px) and (min-width:577px) {
+
+    .Content{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width:576px) {
+
+    .Content{
+        flex-direction: column;
+    }
+    
+}

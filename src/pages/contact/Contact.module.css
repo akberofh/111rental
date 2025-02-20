@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200..1000&display=swap');
+
+.container {
+    font-family: "Nunito", sans-serif;
+    background-color: #EDF1F6;
+    min-height: 100vh;
+}
+
+.Head {
+    padding: 0 30px;
+    padding-top: 130px;
+}
+
+.Head>h1 {
+    font-size: 36px;
+    font-weight: 400;
+    color: #373752;
+}
+
+.contact {
+    padding: 0 30px;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.clock {
+    padding-top: 13px;
+}
+
+.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 80px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+}
+
+.link>span {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.link>a {
+    color: gray;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.link>a:hover {
+    color: #0066cc;
+}
+
+.contactlink {
+    display: block;
+    margin: 10px 0;
+    font-size: 18px;
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.formandmap {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+    padding: 0 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.forms {
+    width: 40%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.forms form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.forms label {
+    font-size: 14px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.forms input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#text {
+    height: 100px;
+}
+
+.inp>input {
+    border-radius: 20px;
+}
+
+.forms button {
+    padding: 10px;
+    background-color: #003271;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forms button:hover {
+    background-color: #0056b3;
+}
+
+.map {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 60%;
+    height: 100%;
+}
+
+@media screen and (max-width:1200px) and (min-width:993px) {
+    .link {
+        padding: 10px 50px;
+    }
+}
+
+@media screen and (max-width:992px) and (min-width:768px) {
+
+    .link {
+        padding: 10px 20px;
+    }
+
+    .formandmap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:767px) and (min-width:577px) {
+
+    .contact {
+        display: flex;
+        gap: 10px;
+    }
+
+    .Head {
+        padding-top: 100px;
+    }
+
+    .link {
+        width: 47%;
+        padding: 10px 20px;
+    }
+
+    .formandmap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .Head>h1 {
+        font-size: 25px;
+    }
+
+    .contact {
+        display: flex;
+        gap: 10px;
+    }
+
+    .Head {
+        padding-top: 100px;
+    }
+
+    .link {
+        text-align: center;
+        width: 47%;
+        padding: 10px 20px;
+    }
+
+    .link>a {
+        word-break: break-word;
+    }
+
+    .formandmap {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .forms {
+        width: 100%;
+    }
+
+    .map {
+        width: 100%;
+    }
+
+}

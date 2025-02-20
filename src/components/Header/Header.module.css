@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.Contain {
+    font-family: "Nunito", sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 80px;
+    background-color: var(--header-bg-color) !important;
+    position: fixed;
+    z-index: 99999 !important;
+    width: 100%;
+}
+
+.navLogo> a{
+    text-decoration: none;
+    color: var(--navLogo-link-color) !important;
+    font-size: 35px;
+}
+
+.navbar>ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+}
+
+.navbar>ul>a {
+    color: var(--navbar-link-color) !important;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all ease-in-out 0.5s;
+}
+
+.navbar>ul>a:hover {
+    color: var(--navbar-link-color) !important;
+}
+
+.navActions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.userIcon {
+    position: relative;
+    cursor: pointer;
+}
+
+.userMenu {
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    min-width: 120px;
+}
+
+.userMenu a {
+    text-decoration: none;
+    color: #003271;
+    padding: 8px;
+    transition: 0.3s;
+}
+
+.userMenu a:hover {
+    background: #f1f6fd;
+}
+
+.themeToggle,
+.wishlist {
+    cursor: pointer;
+    background-color: var(--header-button-bg-color) !important;
+}
+
+.themeToggleTwo svg {
+    cursor: pointer;
+    color: #003271;
+    background-color: #32A4F6;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+.themeToggle svg,
+.wishlist svg,
+.userIcon svg {
+    color: #003271;
+}
+
+[data-theme="dark"] .userIcon svg,
+[data-theme="dark"] .themeToggle svg,
+[data-theme="dark"] .wishlist svg,
+[data-theme="dark"] .menu button svg {
+    color: white;
+}
+
+.menu {
+    display: none;
+}
+
+.Menu {
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30px;
+    padding-top: 30px;
+}
+
+
+
+.menuBar>ul {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    gap: 25px;
+
+}
+
+.menuBar>ul>a {
+    color: #003271;
+    text-decoration: none;
+    transition: all ease-in-out 0.5s;
+}
+
+.menuBar>ul>a:hover {
+    color: #32A4F6;
+}
+
+.menu button svg {
+    color: #003271;
+}
+
+.menu button {
+   background-color: transparent;
+}
+
+.menu button:hover{
+    background-color: transparent;
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .navbar {
+        display: none;
+    }
+
+    .themeToggle {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .call {
+        display: none;
+    }
+
+    .navLogo>a {
+        font-size: 1rem;
+    }
+
+    .navActions {
+        gap: 15px;
+    }
+
+    .themeToggle svg,
+    .wishlist svg,
+    .userIcon svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    .menu svg {
+        width: 28px;
+        height: 28px;
+    }
+}
