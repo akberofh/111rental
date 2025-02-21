@@ -75,7 +75,7 @@ const Cars = () => {
 
     const fetchCars = async () => {
       try {
-        const response = await axios.get("http://localhost:5500/product");
+        const response = await axios.get("https://rental111back-b5e17e75fe0f.herokuapp.com/product");
         setCars(response.data);
         setFilteredCars(response.data); // Başlangıçda bütün maşınları göstər
       } catch (error) {
@@ -90,7 +90,7 @@ const Cars = () => {
 
     if (user) {
       axios
-        .get(`http://localhost:5500/wishlist/${user.id}`)
+        .get(`https://rental111back-b5e17e75fe0f.herokuapp.com/wishlist/${user.id}`)
         .then((response) => {
           setFavorites(response.data);
         })
@@ -132,7 +132,7 @@ const Cars = () => {
       const _id = favorites.filter((item) => item.carId === id)[0]._id;
   
       try {
-        await axios.delete("http://localhost:5500/wishlist", {
+        await axios.delete("https://rental111back-b5e17e75fe0f.herokuapp.com/wishlist", {
           data: { _id }
         });
   
@@ -143,7 +143,7 @@ const Cars = () => {
     } else {
       // Əgər favoritdə deyilsə, əlavə edirik
       try {
-        const res = await axios.post("http://localhost:5500/wishlist", {
+        const res = await axios.post("https://rental111back-b5e17e75fe0f.herokuapp.com/wishlist", {
           userId: user.id,
           carId: id,
         });

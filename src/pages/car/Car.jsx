@@ -15,7 +15,7 @@ const Car = () => {
   useEffect(() => {
     const fetchCar = async () => {
       try {
-        const { data } = await axios.get(`http://localhost:5500/product/${id}`);
+        const { data } = await axios.get(`https://rental111back-b5e17e75fe0f.herokuapp.com/product/${id}`);
         if (data.length > 0) {
           setCar(data[0]);
         }
@@ -61,7 +61,7 @@ const Car = () => {
     };
 
     try {
-      await axios.post("http://localhost:5500/reservation", data);
+      await axios.post("https://rental111back-b5e17e75fe0f.herokuapp.com/reservation", data);
       e.target.reset();
       navigate("/payment");
     } catch (error) {

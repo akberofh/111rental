@@ -31,7 +31,7 @@ const Contact = () => {
       message
     }
 
-    await axios.post("http://localhost:5500/applications",data);
+    await axios.post("https://rental111back-b5e17e75fe0f.herokuapp.com/applications",data);
 
     e.target.reset();
   };

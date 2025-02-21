@@ -26,7 +26,7 @@ const Wishlist = () => {
 
     const fetchData = async () => {
       const { data } = await axios.get(
-        `http://localhost:5500/wishlist/${user.id}`
+        `https://rental111back-b5e17e75fe0f.herokuapp.com/wishlist/${user.id}`
       );
 
       if (!data) return;
@@ -36,7 +36,7 @@ const Wishlist = () => {
       const cars = await Promise.all(
         carsId.map(async (carId) => {
           const { data } = await axios.get(
-            `http://localhost:5500/product/${carId}`
+            `https://rental111back-b5e17e75fe0f.herokuapp.com/product/${carId}`
           );
           return data;
         })
